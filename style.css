@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background: hsl(210, 46%, 95%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    color: hsl(214, 17%, 51%);
+}
+.main {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 880px;
+    height: 50vh;
+    background: white;
+}
+
+.main-1{
+    height: 100%;
+    width: 700px;
+}
+.main-1 img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+
+.main-2{
+    height: 100%;
+    display: grid;
+    align-items: stretch;
+    align-content: space-evenly;
+    padding: 30px;
+    
+}
+
+.main-2 h1{
+    font-size: 24px;
+}
+
+.main-2 p{
+    font-size: 15px;
+}
+
+.minimals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mulher {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.user{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.user h2{
+    font-size: 15px;
+    font-weight: 700;
+}
+.user span{
+    font-size: 13px;
+}
+
+.share-icon img{
+    
+}
+
+.share-icon {
+    width: 36px;
+    height: 36px;
+    background: hsl(210, 46%, 95%);
+    padding: 11px;
+    border-radius: 50%;
+}
+.share {
+    display: none;
+    align-items: center;
+    padding: 14px 20px 14px 20px;
+    gap: 20px;
+    background: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: absolute;
+    top: -65px;
+    left: -82px;
+}
+.share::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 47px;
+    left: 90px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+}
+.share p{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 12px;
+}
+
+.div-pai{
+    position: relative;
+}
+.div-irma {
+    cursor: pointer;
+}
+a{
+    width: 20px;
+    height: 20px;
+}
+
+.link-2{
+    height: 17px;
+}
+
+.hoa{
+    display: flex;
+}
+
+@media(max-width: 900px) {
+    .main {
+    display: grid;
+    max-width: 440px;
+    height: 90vh;
+    grid-template-rows: auto 1fr;
+        
+    }
+    .main-1, .main-2 {
+        width: 100%;
+    }
+    .main-1 img{
+        width: 100%;
+        height: 220px;
+        border-radius: 20px 20px 0 0;
+    }
+    .main-2{
+        padding: 0px 40px 5px 40px;
+    }
+    .main-2 h1 {
+        font-size: 20px;
+        letter-spacing: 1.4px;
+        line-height: 1.5;
+    }
+    .main-2 p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .minimals{
+        justify-content: space-around;
+    }
+}
